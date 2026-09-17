@@ -8,7 +8,7 @@
 
 請在 Windows 電腦下載並儲存這個檔案：
 
-<a class="download" href="https://github.com/cieoco/robot-course-site/releases/download/v2026.07.27/PhoneBlockyMotorTuner.exe">下載 PhoneBlockyMotorTuner.exe <span>71.5 MB · Windows</span></a>
+<a class="download" href="https://github.com/cieoco/robot-course-site/releases/download/v2026.09.18/PhoneBlockyMotorTuner.exe">下載 PhoneBlockyMotorTuner.exe <span>89.1 MB · Windows</span></a>
 
 檔案下載完成後，建議先確認檔名仍是 `PhoneBlockyMotorTuner.exe`，再雙擊開啟。
 
@@ -25,7 +25,7 @@
 1. 開啟 `PhoneBlockyMotorTuner.exe`。
 2. 切換到最右側的「**燒錄**」分頁。
 3. 若上方已經連上 USB，先按「**斷線**」，讓燒錄程式能使用 COM 埠。
-4. 在燒錄分頁選擇正確的 COM 埠；不確定時按「**重新整理**」。
+4. 在視窗最上方確認已選擇「USB（序列）」與正確的 COM 埠；不確定時按上方的「**重新整理**」。燒錄分頁會直接使用這個選擇。
 5. 保持四個燒錄檔都啟用，然後按「**開始燒錄**」。首次燒錄不要取消 `littlefs.bin`，它包含手機操作網頁。
 6. 看見「**燒錄完成，請重新啟動 ESP32**」後，重新插拔 USB 或按控制板的 RST。
 
@@ -44,7 +44,7 @@
 | 現象 | 先做什麼 |
 | --- | --- |
 | 工具找不到 COM 埠 | 換一條可傳資料的 USB 線；確認控制板供電；安裝對應的 CH340 或 CP2102 USB 驅動。 |
-| 開始燒錄後立刻失敗 | 先在工具上方按「斷線」釋放 COM 埠，再確認燒錄分頁選的是正確埠。 |
+| 開始燒錄後立刻失敗 | 先在工具上方按「斷線」釋放 COM 埠，再確認上方 USB 連線列選的是正確埠。 |
 | 燒錄會中斷 | 將 Baud 降到 `460800` 或 `115200`，避免鬆動的 USB 線。 |
 | 有 ESP32 熱點，但網頁空白或 404 | 重新燒錄時確認四個檔案都啟用，特別是 `littlefs.bin`。 |
 
