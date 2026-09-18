@@ -13,6 +13,8 @@ ESP32 熱點通常沒有網際網路。先讀完本頁，或按下「列印／�
 - 如果老師已修改熱點名稱或密碼，請使用提供給你的資料。
 - 曾設定控制板名稱與路由器 Wi-Fi 時，熱點名稱也可能是「自訂名稱-IP」。
 
+<div class="lesson-diagram connection-flow" role="img" aria-label="手機連上 ESP32 熱點，再以瀏覽器開啟 192.168.4.1 的流程圖"><div class="flow-card"><strong>1</strong><span>手機 Wi-Fi</span></div><b>→</b><div class="flow-card active"><strong>2</strong><span>ESP32-XXXX<br><small>密碼 12345678</small></span></div><b>→</b><div class="flow-card"><strong>3</strong><span>瀏覽器<br><small>192.168.4.1</small></span></div></div>
+
 **成功訊號**：Wi-Fi 設定顯示手機已連上這塊板子的熱點。
 
 ## 03　保持連線

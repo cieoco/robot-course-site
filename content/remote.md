@@ -10,6 +10,8 @@
 
 在讓任何東西動起來之前，先按一次，確認你知道它的位置。發生卡住、方向不對、線材被捲入，或你不確定下一步時，先按這顆按鈕；不要用手抓馬達。
 
+<div class="lesson-diagram remote-safety" role="img" aria-label="遙控操作順序：先確認緊急停止按鈕，再將滑桿歸零，最後開啟單一馬達控制"><div class="stop-sign">緊急<br>停止</div><b>→</b><div class="slider-zero"><span>滑桿</span><i></i><small>0</small></div><b>→</b><div class="remote-on">M3<br><strong>ON</strong></div></div>
+
 按下緊急停止後，將 M3／M4 的滑桿回到 0，並讓對應的圓形按鈕回到 OFF，才重新開始控制。
 
 ## 02　用動力滑桿控制 M3

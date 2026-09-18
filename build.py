@@ -8,6 +8,7 @@ ASSETS = ROOT / "assets"
 if ASSETS.is_dir():
     shutil.copytree(ASSETS, OUT / "assets", dirs_exist_ok=True)
 css = (ROOT / "style.css").read_text(encoding="utf-8")
+css += (ROOT / "lesson-diagrams.css").read_text(encoding="utf-8")
 css += ".download{display:block;background:#294e40;color:#fff;text-decoration:none;padding:18px 22px;border-radius:10px;font-weight:700;margin:18px 0}.download:hover{background:#41674f}.download span{display:block;font-size:13px;font-weight:400;opacity:.85}.lesson-shot{margin:25px 0 30px}.lesson-shot img{display:block;width:100%;border:1px solid #d5dbd1;border-radius:10px}.lesson-shot figcaption{margin-top:8px;color:#617268;font-size:13px}"
 def shell(title, body, lesson=False):
     return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="phone_blocky 電控入門：從手機連線到積木控制，一步一步學會。"><title>{title} · ROBOT LAB</title><style>{css}</style></head><body><a class="skip" href="#main">跳至內容</a><header><a class="brand" href="index.html"><span class="brand-icon">R</span> ROBOT LAB <small>實作教室</small></a><nav aria-label="主要導覽"><a href="index.html#courses">課程地圖</a><a href="connect.html">開始學習 ↗</a></nav></header>{body}<footer><span>ROBOT LAB / phone_blocky</span><span>教學網站試作 · 教材整理於 2026.09.16</span></footer></body></html>'''

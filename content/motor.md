@@ -25,6 +25,8 @@
 
 `setup` 只會在程式載入後跑一次，所以這正好是一個安全的首次測試：馬達轉一秒就停。先不要把這三個積木放進 `loop`，否則它會不停重複。
 
+<div class="lesson-diagram block-flow" role="img" aria-label="積木程式流程：setup 內依序執行馬達一正轉百分之三十、等待一千毫秒、停止馬達一"><div class="block setup">setup</div><b>↓</b><div class="block motor">M1　Forward　30%</div><b>↓</b><div class="block wait">等待　1000 ms</div><b>↓</b><div class="block stop">停止 M1</div></div>
+
 按「執行程式」。
 
 **成功訊號**：M1 以低速轉動約一秒，然後停止。看見一次完整動作，就表示你第一次用積木控制到馬達了。
