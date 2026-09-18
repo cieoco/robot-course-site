@@ -8,7 +8,11 @@
 
 手機連上控制板的 Wi-Fi 後，開啟 `http://192.168.4.1`，從主選單進入「🧩 積木程式」。先確認頁面顯示 WebSocket 已連線。
 
-左側是積木工具箱，中間是工作區。這一課會用到兩個分類：
+左側是積木工具箱，中間是工作區；頁面最上方的藍色按鈕分別是「停止程式」與「執行程式」。開啟時，工作區已經準備好 `setup` 與 `loop` 兩個骨架。
+
+<figure class="lesson-shot"><img src="assets/blockly-controller.png" alt="Blockly 積木程式控制器，左側有 Arduino、流程控制與馬達模組分類，中間為 setup 和 loop 工作區，上方有停止程式和執行程式按鈕。"><figcaption>實際的 Blockly 控制器起始畫面。點左側分類取出積木，拖到中間的 `setup` 或 `loop` 內；完成後按右上方的「執行程式」。</figcaption></figure>
+
+這一課會用到兩個分類：
 
 | 分類 | 要用的積木 |
 | --- | --- |
