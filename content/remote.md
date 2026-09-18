@@ -8,9 +8,9 @@
 
 手機連到 ESP32 熱點後，開啟 `http://192.168.4.1`，從主選單進入「🕹️ 搖桿」。頁面右上角有紅色「**緊急停止**」按鈕。
 
-在讓任何東西動起來之前，先按一次，確認你知道它的位置。發生卡住、方向不對、線材被捲入，或你不確定下一步時，先按這顆按鈕；不要用手抓馬達。
+<figure class="lesson-shot"><img src="assets/remote-control-full.png" alt="手機版機器人遙控器，頂部有緊急停止按鈕，中間有 M3 與 M4 的開關按鈕和馬達控制設定。"><figcaption>實際的手機遙控頁。先記住頂部的「緊急停止」；控制 M3 時，使用中段左側的 M3 開關與下方的 M3 動力滑桿。</figcaption></figure>
 
-<div class="lesson-diagram remote-safety" role="img" aria-label="遙控操作順序：先確認緊急停止按鈕，再將滑桿歸零，最後開啟單一馬達控制"><div class="stop-sign">緊急<br>停止</div><b>→</b><div class="slider-zero"><span>滑桿</span><i></i><small>0</small></div><b>→</b><div class="remote-on">M3<br><strong>ON</strong></div></div>
+在讓任何東西動起來之前，先按一次，確認你知道它的位置。發生卡住、方向不對、線材被捲入，或你不確定下一步時，先按這顆按鈕；不要用手抓馬達。
 
 按下緊急停止後，將 M3／M4 的滑桿回到 0，並讓對應的圓形按鈕回到 OFF，才重新開始控制。
 
