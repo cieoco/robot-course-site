@@ -26,10 +26,11 @@
 2. 切換到最右側的「**燒錄**」分頁。
 3. 若上方已經連上 USB，先按「**斷線**」，讓燒錄程式能使用 COM 埠。
 4. 在視窗最上方選擇「**USB（序列）**」與正確的 COM 埠；不確定時按上方的「**重新整理**」。燒錄分頁會直接使用這個選擇。
-
-<figure class="lesson-shot"><img src="assets/flash-com-port.png" alt="PhoneBlockyMotorTuner 顯示燒錄完成；上方 USB 序列連線列選擇 COM4，紀錄最後一行顯示請重新啟動 ESP32。"><figcaption>燒錄完成的畫面：最後一行顯示「燒錄完成，請重新啟動 ESP32」後，再重新插拔 USB 或按 RST。</figcaption></figure>
 5. 保持四個燒錄檔都啟用，然後按「**開始燒錄**」。首次燒錄不要取消 `littlefs.bin`，它包含手機操作網頁。
-6. 看見「**燒錄完成，請重新啟動 ESP32**」後，重新插拔 USB 或按控制板的 RST。
+6. 看見「**燒錄完成，請重新啟動 ESP32**」後，工具會接著顯示 AP 熱點名稱與 AP MAC。
+7. 用手機 Wi-Fi 連到畫面顯示的 AP 熱點名稱，例如 `ESP32-08D0`；預設密碼是 `12345678`。完整 AP MAC 可留作板子識別紀錄。
+
+<figure class="lesson-shot"><img src="assets/flash-com-port.png" alt="PhoneBlockyMotorTuner 顯示燒錄完成、AP 熱點名稱 ESP32-08D0 與 AP MAC C8:F0:9E:50:08:D1。"><figcaption>燒錄完成後會顯示可用來連線的 AP 熱點名稱。手機請連 <code>ESP32-08D0</code>；多人同時操作時，可把這個名稱貼在控制板上辨識。</figcaption></figure>
 
 一般情況維持預設 Baud `921600`；若中途失敗，改成 `460800` 或 `115200` 再試。
 
@@ -37,7 +38,7 @@
 
 - 工具可以看見並選到控制板的 COM 埠。
 - 燒錄紀錄顯示完成，沒有錯誤訊息。
-- 重啟後，手機 Wi-Fi 清單出現 `ESP32-` 開頭的熱點。
+- 重啟後，紀錄顯示 `ESP32-` 開頭的 AP 熱點名稱；手機 Wi-Fi 清單中也會出現相同名稱。
 
 完成後，繼續閱讀「手機連上它」，用手機開啟控制板的主選單。
 
