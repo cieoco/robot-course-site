@@ -27,7 +27,7 @@
 3. 若上方已經連上 USB，先按「**斷線**」，讓燒錄程式能使用 COM 埠。
 4. 在視窗最上方選擇「**USB（序列）**」與正確的 COM 埠；不確定時按上方的「**重新整理**」。燒錄分頁會直接使用這個選擇。
 
-<figure class="lesson-shot"><img src="assets/flash-com-port.png" alt="PhoneBlockyMotorTuner 的燒錄分頁，上方 USB 序列連線列選擇 COM4；燒錄設定提示會使用上方選擇的 COM 埠。"><figcaption>先在最上方選擇 USB（序列）與正確 COM 埠；燒錄設定不需要再選一次。</figcaption></figure>
+<figure class="lesson-shot"><img src="assets/flash-com-port.png" alt="PhoneBlockyMotorTuner 顯示燒錄完成；上方 USB 序列連線列選擇 COM4，紀錄最後一行顯示請重新啟動 ESP32。"><figcaption>燒錄完成的畫面：最後一行顯示「燒錄完成，請重新啟動 ESP32」後，再重新插拔 USB 或按 RST。</figcaption></figure>
 5. 保持四個燒錄檔都啟用，然後按「**開始燒錄**」。首次燒錄不要取消 `littlefs.bin`，它包含手機操作網頁。
 6. 看見「**燒錄完成，請重新啟動 ESP32**」後，重新插拔 USB 或按控制板的 RST。
 
